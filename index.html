@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NN Creation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900 font-sans">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+      <a href="#" class="text-2xl font-bold text-indigo-600">NN Creation</a>
+      <nav class="hidden md:flex space-x-6">
+        <a href="#" class="hover:text-indigo-600">Home</a>
+        <a href="#youtube" class="hover:text-indigo-600">YouTube</a>
+        <a href="#facebook" class="hover:text-indigo-600">Facebook</a>
+        <a href="#about" class="hover:text-indigo-600">About</a>
+        <a href="#contact" class="hover:text-indigo-600">Contact</a>
+      </nav>
+      <button id="menu-btn" class="md:hidden text-2xl">&#9776;</button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-gray-100 p-4 space-y-2">
+      <a href="#" class="block">Home</a>
+      <a href="#youtube" class="block">YouTube</a>
+      <a href="#facebook" class="block">Facebook</a>
+      <a href="#about" class="block">About</a>
+      <a href="#contact" class="block">Contact</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-purple-600 to-pink-500 text-white text-center py-20 px-6">
+    <h1 class="text-5xl md:text-6xl font-bold mb-4">Welcome to NN Creation</h1>
+    <p class="max-w-2xl mx-auto mb-6 text-lg">Creating content that inspires. Join us on YouTube & Facebook for the latest videos, designs, and creativity.</p>
+    <div class="flex justify-center space-x-4">
+      <a href="https://www.youtube.com/@nipun.nikesha" target="_blank" class="bg-white text-purple-600 px-6 py-3 rounded-full font-semibold shadow hover:bg-gray-100 transition">Watch on YouTube</a>
+      <a href="https://www.facebook.com/nipunncreation/" target="_blank" class="bg-white text-pink-500 px-6 py-3 rounded-full font-semibold shadow hover:bg-gray-100 transition">Follow on Facebook</a>
+    </div>
+  </section>
+
+  <!-- Featured Videos Section -->
+  <section id="youtube" class="py-16 px-6">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-indigo-600 mb-8 text-center">Latest YouTube Videos</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+          <div class="aspect-w-16 aspect-h-9 bg-gray-200">
+            <img src="https://via.placeholder.com/640x360" alt="Video 1" class="w-full h-full object-cover">
+          </div>
+          <div class="p-4">
+            <h3 class="text-xl font-semibold mb-2">Video Title One</h3>
+            <p class="text-gray-600 text-sm mb-4">Short description of content to catch interest.</p>
+            <a href="#" class="text-purple-600 font-semibold hover:underline">Watch Now →</a>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+          <div class="aspect-w-16 aspect-h-9 bg-gray-200">
+            <img src="https://via.placeholder.com/640x360" alt="Video 2" class="w-full h-full object-cover">
+          </div>
+          <div class="p-4">
+            <h3 class="text-xl font-semibold mb-2">Video Title Two</h3>
+            <p class="text-gray-600 text-sm mb-4">Short description of content to catch interest.</p>
+            <a href="#" class="text-purple-600 font-semibold hover:underline">Watch Now →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Facebook Section -->
+  <section id="facebook" class="py-16 px-6 bg-gray-50">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-indigo-600 mb-8 text-center">From Facebook</h2>
+      <div class="grid md:grid-cols-2 gap-8 items-center">
+        <div>
+          <img src="https://via.placeholder.com/600x400" alt="Facebook Post" class="w-full rounded-lg shadow-lg">
+        </div>
+        <div class="space-y-4">
+          <h3 class="text-2xl font-semibold">Latest on Facebook</h3>
+          <p class="text-gray-700">Check out our most recent posts where we share designs, thoughts, and behind-the-scenes of our creative journey.</p>
+          <a href="https://www.facebook.com/nipunncreation/" target="_blank" class="text-pink-500 font-semibold hover:underline">Visit our Facebook Page →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-16 px-6">
+    <div class="container mx-auto text-center max-w-2xl">
+      <h2 class="text-3xl font-bold text-indigo-600 mb-4">About NN Creation</h2>
+      <p class="text-gray-700 mb-6">We are a creative team passionate about digital content — videos, graphics, storytelling. Our mission is to inspire and entertain while growing a community that values creativity and authenticity.</p>
+    </div>
+  </section>
+
+  <!-- Subscribe Section -->
+  <section id="contact" class="bg-indigo-600 text-white text-center py-16 px-6">
+    <h2 class="text-3xl font-bold mb-4">Want to stay updated?</h2>
+    <p class="mb-6">Subscribe for the latest videos, posts, and content drops.</p>
+    <form class="max-w-md mx-auto flex flex-col sm:flex-row gap-4">
+      <input type="email" placeholder="Your Email Address" class="flex-1 px-4 py-2 rounded-lg text-gray-900" required>
+      <button type="submit" class="bg-white text-indigo-600 px-6 py-2 rounded-lg font-semibold hover:bg-gray-100 transition">Subscribe</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 text-center py-6">
+    <div class="container mx-auto space-y-4">
+      <p>&copy; 2025 NN Creation. All rights reserved.</p>
+      <div class="space-x-4">
+        <a href="https://www.youtube.com/@nipun.nikesha" target="_blank" class="hover:text-white">YouTube</a>
+        <a href="https://www.facebook.com/nipunncreation/" target="_blank" class="hover:text-white">Facebook</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS for Mobile Menu -->
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>
+
